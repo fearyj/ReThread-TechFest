@@ -57,20 +57,23 @@
 
         
         
+        
     </style>
 </head>
-<body >
+<body>
     <div class="header" style="text-align:center">
         <img class="logo" src="src/image/logo.png" alt="ReThread Logo"/>
     </div>
+    <nav>
+        <a href="./chatbot.html">Chatbot</a>
+    </nav>
     <h1 style="text-align:center">Upload Your Photos</h1>
 
     <form id="uploadForm">
         <div class="photo-container" style="text-align:center">
             <div>
-    
-                <label for="photoInput1" class="photo-label">Photo 1:</label>
-                
+                <label for="photoInput1" class="photo-label">Photo 1:</label> 
+
                 <img id="preview1" class="photo-preview" alt="Preview 1">
                 <input type="file" id="photoInput1" accept="image/*" onchange="previewPhoto(1)">
             </div>
@@ -102,9 +105,10 @@
                     preview.src = e.target.result;
                 };
                 reader.readAsDataURL(file);
-            } 
+            }
         }
-        function generateImage() {
+        
+    function generateImage() {
       // Show loading message or spinner
       document.getElementById('imageContainer').innerHTML = 'Loading...';
 
@@ -123,7 +127,7 @@
 
         // Append the image to the image container
         document.getElementById('imageContainer').appendChild(img);
-      }, 3000); // 5000 milliseconds (5 seconds)
+      }, 3000); // 3000 milliseconds (3 seconds)
     }
     </script>
 </body>
