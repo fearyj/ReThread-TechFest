@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReThread</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 200px;
+            height: auto;
+            margin: 20px;
+        }
+
+        .logo {
+            width: 200px;
+            height: 63px;
+            margin: 20px;
+        }
+        .header{ 
+            background-color: white;
+            padding: 0px;
+            width: 100%;
+        }   
+        
+        .result{
+            width: 300px;
+            height: auto;
+            margin: 20px;
+        }
+
+        #generateButton {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        
+        
+    </style>
+</head>
+<body >
+    <div class="header" style="text-align:center">
+        <img class="logo" src="src/image/logo.png" alt="ReThread Logo"/>
+    </div>
+    <h1 style="text-align:center">Upload Your Photos</h1>
+
+    <form id="uploadForm">
+        <div class="photo-container" style="text-align:center">
+            <div>
+                <label for="photoInput1" display: block;
+                text-align: center;
+                line-height: 150%;
+                font-size: .85em;>Photo 1:</label>
+                <img id="preview1" class="photo-preview" alt="Preview 1">
+                <input type="file" id="photoInput1" accept="image/*" onchange="previewPhoto(1)">
+            </div>
+            <div>
+                <label for="photoInput2">Photo 2:</label>
+                <img id="preview2" class="photo-preview" alt="Preview 2">
+                <input type="file" id="photoInput2" accept="image/*" onchange="previewPhoto(2)">
+            </div>
+        </div>
+    </form>
+
+    <div style="text-align:center">
+    
+    <button id="generateButton" onclick="generateImage()">Generate Image</button>
+    <h2>Result</h2>
+    <div id="imageContainer"></div>
+   
+    </div>
+
+    <script>
+        function previewPhoto(photoNumber) {
+            const fileInput = document.getElementById(`photoInput${photoNumber}`);
+            const preview = document.getElementById(`preview${photoNumber}`);
+            
+            const file = fileInput.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+        function generateImage() {
+            // Create an image element
+            var img = document.createElement('img');
+            
+            // Set the source of the image (replace 'image-url.jpg' with your image URL)
+            img.src = 'src/image/output.png';
+            
+            // Set any additional attributes or styles for the image if needed
+
+            // Append the image to the image container
+            document.getElementById('imageContainer').appendChild(img);
+    }
+    </script>
+</body>
+</html>

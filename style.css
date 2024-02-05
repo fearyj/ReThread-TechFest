@@ -1,0 +1,22 @@
+body {
+    background: linear-gradient(#62CFF4,  #2C67F2 );
+    
+    /* Additional styling starts below. */
+    
+    font-family: 'Lexend Deca', sans-serif;
+    width: max; 
+    margin: auto;
+    color: #2E475D;
+  }
+  
+  table {
+    padding: 10px;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+  }
+  
+  td, th {
+    border: none;
+    padding-top: 20px;
+  }
