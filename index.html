@@ -43,6 +43,18 @@
             cursor: pointer;
         }
 
+        .photo-label {
+            display: inline-block;
+            background-color: #6F8FAF; /* Blue background */
+            color: white; /* White text */
+            padding: 8px 16px; /* Adjust padding as needed */
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            border: none; /* Remove any default border */
+            border-radius: 4px; /* Optional: adds rounded corners */
+        }
+
         
         
     </style>
@@ -56,15 +68,14 @@
     <form id="uploadForm">
         <div class="photo-container" style="text-align:center">
             <div>
-                <label for="photoInput1" display: block;
-                text-align: center;
-                line-height: 150%;
-                font-size: .85em;>Photo 1:</label>
+    
+                <label for="photoInput1" class="photo-label">Photo 1:</label>
+                
                 <img id="preview1" class="photo-preview" alt="Preview 1">
                 <input type="file" id="photoInput1" accept="image/*" onchange="previewPhoto(1)">
             </div>
             <div>
-                <label for="photoInput2">Photo 2:</label>
+                <label for="photoInput2" class="photo-label">Photo 2:</label>
                 <img id="preview2" class="photo-preview" alt="Preview 2">
                 <input type="file" id="photoInput2" accept="image/*" onchange="previewPhoto(2)">
             </div>
@@ -91,7 +102,7 @@
                     preview.src = e.target.result;
                 };
                 reader.readAsDataURL(file);
-            }
+            } 
         }
         function generateImage() {
             // Create an image element
