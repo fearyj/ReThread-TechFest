@@ -105,16 +105,25 @@
             } 
         }
         function generateImage() {
-            // Create an image element
-            var img = document.createElement('img');
-            
-            // Set the source of the image (replace 'image-url.jpg' with your image URL)
-            img.src = 'src/image/output.png';
-            
-            // Set any additional attributes or styles for the image if needed
+      // Show loading message or spinner
+      document.getElementById('imageContainer').innerHTML = 'Loading...';
 
-            // Append the image to the image container
-            document.getElementById('imageContainer').appendChild(img);
+      // Set a 5-second delay before displaying the image
+      setTimeout(function() {
+        // Create an image element
+        var img = document.createElement('img');
+        
+        // Set the source of the image (replace 'image-url.jpg' with your image URL)
+        img.src = 'src/image/output.png';
+        
+        // Set any additional attributes or styles for the image if needed
+
+        // Clear loading message
+        document.getElementById('imageContainer').innerHTML = '';
+
+        // Append the image to the image container
+        document.getElementById('imageContainer').appendChild(img);
+      }, 3000); // 5000 milliseconds (5 seconds)
     }
     </script>
 </body>
