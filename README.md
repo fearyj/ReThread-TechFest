@@ -37,13 +37,12 @@ The next versions of ReThread include creating 3D models of the user wearing mor
 
 Based on research done by CoreSight, 24.4% of online apparel orders in the US are returned, amounting to 38 billion US Dollars. In this aspect, ReThread aims to be a game-changer for online retailers like shopee and carousell. By reducing their rate of apparel return, they make sustainable decisions to reduce the transport emissions and cost whilst simultaneously increasing their profit. The use of AI for both the sellers and users translates into a need to redesign how we retrieve clothing.
 
-* Built with
-What languages, frameworks, platforms, cloud services, databases, APIs, or other technologies did you use?
+##  Built with 
 * Built with HTML, JS, CSS
 * Intend to Incorporate: Generative Adversarial Network (GAN), AWS Cloud Service, OpenAI's GPT-3 API , React Framework
 
 
-References:
+## References:
 
 Chan, A. (2023, April 4). The True Cost of Apparel Returns: Alarming Return Rates Require Loss-Minimization Solutions. Coresight Research. https://coresight.com/research/the-true-cost-of-apparel-returns-alarming-return-rates-require-loss-minimization-solutions/#:~:text=A%2024.4%25%20Online%20Apparel%20Return%20Rate%20Means%20%2438%20Billion%20Returns,-Based%20on%20a&text=Consumers%20who%20shop%20apparel%20and,products%20will%20look%20or%20fit.
 ‌
