@@ -1,4 +1,4 @@
-# ReThread-TechFest
+# ReThread
 
 ## Project Story
 
