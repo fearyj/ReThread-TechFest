@@ -46,5 +46,6 @@ Intend to Incorporate: Generative Adversarial Network (GAN), AWS Cloud Service, 
 References:
 Chan, A. (2023, April 4). The True Cost of Apparel Returns: Alarming Return Rates Require Loss-Minimization Solutions. Coresight Research. https://coresight.com/research/the-true-cost-of-apparel-returns-alarming-return-rates-require-loss-minimization-solutions/#:~:text=A%2024.4%25%20Online%20Apparel%20Return%20Rate%20Means%20%2438%20Billion%20Returns,-Based%20on%20a&text=Consumers%20who%20shop%20apparel%20and,products%20will%20look%20or%20fit.
 ‌
+
 Returning to order: Improving returns management for apparel companies. (2021, May 25). McKinsey & Company; McKinsey & Company. https://www.mckinsey.com/industries/retail/our-insights/returning-to-order-improving-returns-management-for-apparel-companies
 ‌
