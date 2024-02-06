@@ -1,8 +1,7 @@
 # ReThread-TechFest
 
-Project Story
-* About the project
-Be sure to write what inspired you, what you learned, how you built your project, and the challenges you faced. Format your story in Markdown.
+## Project Story
+
 
 ## Inspiration
 As online shopping surges, the fear of buying the wrong clothing size persists due to inconsistent measurements across stores. According to McKinsey, a concerning 70% of returned clothes are due to the wrong sizes rather than defects or quality. To tackle over-purchasing and promote sustainability, we aim to develop a website allowing users to visualize how clothes will fit before purchasing. 
