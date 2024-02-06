@@ -40,7 +40,7 @@ Based on research done by CoreSight, 24.4% of online apparel orders in the US ar
 * Built with
 What languages, frameworks, platforms, cloud services, databases, APIs, or other technologies did you use?
 * Built with HTML, JS, CSS
-Intend to Incorporate: Generative Adversarial Network (GAN), AWS Cloud Service, OpenAI's GPT-3 API , React Framework
+* Intend to Incorporate: Generative Adversarial Network (GAN), AWS Cloud Service, OpenAI's GPT-3 API , React Framework
 
 
 References:
